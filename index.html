@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JKV Healthy Food | Your Path to Better Living – Chennai</title>
+  <meta name="description" content="Order fresh sprouts, healthy breakfast boxes and nutritious food from JKV Healthy Food in Chennai. Freshly prepared with convenient home delivery. Order today!">
+  <meta name="keywords" content="JKV Healthy Food, healthy food Chennai, fresh sprouts Chennai, healthy breakfast, breakfast box Chennai, sprouts delivery, healthy food delivery, Moulivakkam healthy food, Cut Vegetables Near Me, Fresh Cut Vegetables Moulivakkam, Cut Vegetables Chennai, Vegetable Delivery Moulivakkam, Ready to Cook Vegetables Chennai, Chopped Vegetables Delivery Chennai, Fresh Vegetables Pallavaram">
+  <meta name="author" content="JKV Healthy Food">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="assets/images/JKV_fav_2.png">
+
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PN6Z5RNH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Custom Configuration -->
+  <script src="assets/js/tailwind.config.js"></script>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="font-sans antialiased selection:bg-brand-green selection:text-white">
+  <div id="page-loader" class="page-loader" role="status" aria-label="Loading JKV Healthy Food">
+    <img src="assets/images/JKV_fav.jpg" alt="JKV Healthy Food" class="page-loader__logo" />
+    <span class="page-loader__progress" aria-hidden="true"></span>
+  </div>
+
+  <!-- ==================== STICKY HEADER NAVIGATION ==================== -->
+  <header id="navbar" class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-brand-sage/40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+          <img src="assets/images/JKV_fav.jpg" alt="" class="h-12 w-12 object-contain sm:h-14 sm:w-14" />
+          <span class="flex flex-col">
+            <span class="font-serif text-base sm:text-lg font-bold leading-tight text-brand-green whitespace-nowrap">JKV Healthy Food</span>
+            <span class="text-[9px] sm:text-[10px] tracking-[0.14em] leading-tight text-brand-green/80 whitespace-nowrap">Your Path to Better Living</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-brand-forest/85">
+          <a href="#home" class="hover:text-brand-green transition-colors py-1">Home</a>
+          <a href="#about" class="hover:text-brand-green transition-colors py-1">About Us</a>
+          <a href="#products" class="hover:text-brand-green transition-colors py-1">Our Products</a>
+          <a href="#why-us" class="hover:text-brand-green transition-colors py-1">Why Choose Us</a>
+          <a href="#offers" class="hover:text-brand-green transition-colors py-1">Special Offers</a>
+          <a href="#contact" class="hover:text-brand-green transition-colors py-1">Contact Us</a>
+        </nav>
+
+        <!-- Action Buttons (Cart + WhatsApp CTA + Mobile Toggle) -->
+        <div class="flex items-center gap-2.5 sm:gap-3">
+          <!-- Cart Button -->
+          <button onclick="toggleCartDrawer()" aria-label="View Order Basket" class="relative p-2.5 rounded-full bg-brand-mint text-brand-dark hover:bg-brand-sage/70 transition-colors">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+            <span id="cart-badge" class="hidden absolute -top-1 -right-1 w-5 h-5 rounded-full bg-brand-gold text-white text-[11px] font-bold flex items-center justify-center shadow">0</span>
+          </button>
+
+          <!-- WhatsApp Order Now CTA -->
+          <a href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20I%20would%20like%20to%20place%20a%20fresh%20healthy%20food%20order." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-brand-green hover:bg-brand-dark text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+            <img src="assets/images/whatsapp.png" alt="" class="w-4 h-4 object-contain shrink-0" />
+            <span>WhatsApp Order Now</span>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl bg-brand-cream border border-brand-sage/60 text-brand-forest hover:bg-brand-mint transition-colors">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-brand-sage/40 px-4 pt-3 pb-6 shadow-xl">
+      <div class="flex flex-col space-y-2 text-base font-semibold text-brand-forest">
+        <a href="#home" class="mobile-link px-4 py-2.5 rounded-xl hover:bg-brand-mint transition-colors">Home</a>
+        <a href="#about" class="mobile-link px-4 py-2.5 rounded-xl hover:bg-brand-mint transition-colors">About Us</a>
+        <a href="#products" class="mobile-link px-4 py-2.5 rounded-xl hover:bg-brand-mint transition-colors">Our Products</a>
+        <a href="#why-us" class="mobile-link px-4 py-2.5 rounded-xl hover:bg-brand-mint transition-colors">Why Choose Us</a>
+        <a href="#offers" class="mobile-link px-4 py-2.5 rounded-xl hover:bg-brand-mint transition-colors">Special Offers</a>
+        <a href="#contact" class="mobile-link px-4 py-2.5 rounded-xl hover:bg-brand-mint transition-colors">Contact Us</a>
+        <div class="pt-2">
+          <a href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-brand-green text-white font-semibold px-5 py-3 rounded-full shadow">
+            <img src="assets/images/whatsapp.png" alt="" class="w-5 h-5 object-contain shrink-0" />
+            <span>WhatsApp Order Now</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 1. HERO SECTION ==================== -->
+  <section id="home" class="relative bg-gradient-to-br from-brand-cream via-white to-brand-mint/70 pt-10 pb-24 lg:pt-16 lg:pb-32 overflow-hidden">
+    <!-- Subtle Decorative Background Circles -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-sage/30 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 -left-20 w-80 h-80 bg-brand-mint rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-6 text-center lg:text-left reveal active">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-mint border border-brand-sage text-brand-dark text-xs sm:text-sm font-semibold mb-6 shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
+            <span>100% Natural • Homemade Daily in Chennai</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[54px] font-bold text-brand-forest leading-[1.14] tracking-tight mb-6">
+            Fresh, Sprouted &amp; <span class="text-brand-green">Wholesome Nutrition</span> Delivered Daily
+          </h1>
+
+          <p class="text-base sm:text-lg text-brand-forest/80 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
+            Fuel your mornings with nutrient-rich <strong>200g Fresh Sprouts</strong>, hygienic <strong>4-Compartment Salad &amp; Fruit Boxes</strong>, and stone-ground <strong>Sprouts Idli Batter</strong> — crafted with zero preservatives.
+          </p>
+
+          <!-- Dual CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20I%20want%20to%20order%20fresh%20sprouts%20/%20salad%20boxes." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brand-green hover:bg-brand-dark text-white font-semibold px-7 py-4 rounded-full shadow-float transition-all transform hover:-translate-y-0.5 text-base">
+              <img src="assets/images/whatsapp.png" alt="" class="w-5 h-5 object-contain shrink-0" />
+              <span>Order on WhatsApp</span>
+            </a>
+
+            <a href="#products" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-sand text-brand-forest border border-brand-sage font-semibold px-7 py-4 rounded-full shadow-soft transition-all text-base">
+              <span>Explore Fresh Menu</span>
+              <i data-lucide="arrow-down-right" class="w-5 h-5 text-brand-green"></i>
+            </a>
+          </div>
+
+          <!-- Quick Mini Highlights -->
+          <div class="mt-9 pt-6 border-t border-brand-sage/50 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-xs sm:text-sm font-medium text-brand-forest/75">
+            <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> FSSAI Reg: 22426072001259</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> 2–3 Days Peak Freshness</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-brand-green"></i> Moulivakkam &amp; Chennai</span>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase Column -->
+        <div class="lg:col-span-6 relative reveal active">
+          <div class="relative mx-auto max-w-lg lg:max-w-none">
+            <!-- Main Rounded Organic Image Frame -->
+            <div class="relative rounded-[2.5rem] overflow-hidden shadow-float border-8 border-white bg-brand-mint aspect-[4/3]">
+              <img 
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85" 
+                onerror="this.src='https://placehold.co/800x600/E8F5E9/2E7D32?text=JKV+Fresh+Sprouts+%26+Salad+Bowls'"
+                alt="Fresh Healthy Sprouts and Colorful Vegetable Salad Bowl by JKV Healthy Food" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-forest/35 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-5 right-5 flex items-center justify-between text-white">
+                <div>
+                  <p class="text-xs uppercase tracking-wider font-semibold text-brand-mint">Morning Batch Ready</p>
+                  <p class="font-serif text-lg font-bold">Farm-Fresh Sprouts &amp; Salad Boxes</p>
+                </div>
+                <span class="bg-brand-green/95 backdrop-blur-xs text-white text-xs font-bold px-3.5 py-1.5 rounded-full">Starting ₹40</span>
+              </div>
+            </div>
+
+            <!-- Floating Card 1: Top Left -->
+            <div class="hidden sm:flex items-center gap-3 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-card border border-brand-sage/50 absolute -top-6 -left-6 animate-float-slow">
+              <div class="w-11 h-11 rounded-xl bg-brand-mint text-brand-green flex items-center justify-center shrink-0">
+                <i data-lucide="sprout" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-forest">Sprouts &amp; Idli Batter</p>
+                <p class="text-[11px] text-brand-forest/70">High Protein &amp; Probiotic</p>
+              </div>
+            </div>
+
+            <!-- Floating Card 2: Bottom Right -->
+            <div class="hidden sm:flex items-center gap-3 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-card border border-brand-sage/50 absolute -bottom-6 -right-4 animate-float-delayed">
+              <div class="w-11 h-11 rounded-xl bg-amber-50 text-brand-gold flex items-center justify-center shrink-0">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-brand-forest">FSSAI Certified</p>
+                <p class="text-[11px] text-brand-forest/70">100% Hygienic &amp; Natural</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Curved Organic Wave Divider -->
+    <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none">
+      <svg viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-10 sm:h-14 preserve-3d">
+        <path d="M0 35C360 75 1080 -5 1440 35V70H0V35Z" fill="#FAF8F2" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==================== FLOATING 4-PILLAR TRUST BAR ==================== -->
+  <section class="relative z-20 -mt-10 sm:-mt-14 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-card border border-brand-sage/50 p-6 sm:p-8 reveal">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Pillar 1 -->
+        <div class="flex items-center gap-4">
+          <div class="w-13 h-13 rounded-2xl bg-brand-mint text-brand-green flex items-center justify-center shrink-0 p-3">
+            <i data-lucide="leaf" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-brand-forest text-sm sm:text-base">100% Natural</h3>
+            <p class="text-xs text-brand-forest/70 mt-0.5">Pure, chemical-free ingredients</p>
+          </div>
+        </div>
+        <!-- Pillar 2 -->
+        <div class="flex items-center gap-4">
+          <div class="w-13 h-13 rounded-2xl bg-brand-mint text-brand-green flex items-center justify-center shrink-0 p-3">
+            <i data-lucide="dumbbell" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-brand-forest text-sm sm:text-base">High in Protein</h3>
+            <p class="text-xs text-brand-forest/70 mt-0.5">Live sprouted pulses &amp; grains</p>
+          </div>
+        </div>
+        <!-- Pillar 3 -->
+        <div class="flex items-center gap-4">
+          <div class="w-13 h-13 rounded-2xl bg-brand-mint text-brand-green flex items-center justify-center shrink-0 p-3">
+            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-brand-forest text-sm sm:text-base">Good Digestion</h3>
+            <p class="text-xs text-brand-forest/70 mt-0.5">Enzyme-rich &amp; gut friendly</p>
+          </div>
+        </div>
+        <!-- Pillar 4 -->
+        <div class="flex items-center gap-4">
+          <div class="w-13 h-13 rounded-2xl bg-brand-mint text-brand-green flex items-center justify-center shrink-0 p-3">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-brand-forest text-sm sm:text-base">Boost Immunity</h3>
+            <p class="text-xs text-brand-forest/70 mt-0.5">Packed with daily vitamins</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. ABOUT US SECTION ==================== -->
+  <section id="about" class="pattern-diagonal py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Curated Collage Frame -->
+        <div class="lg:col-span-6 reveal">
+          <div class="grid grid-cols-2 gap-4 sm:gap-6">
+            <div class="space-y-4 sm:space-y-6">
+              <div class="rounded-3xl overflow-hidden shadow-soft border-4 border-white aspect-[4/5]">
+                <img 
+                  src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=85" 
+                  onerror="this.src='https://placehold.co/500x600/C8E6C9/1B5E20?text=Fresh+Salad+Prep'"
+                  alt="Freshly Cut Vegetables and Salad Preparation" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="bg-brand-green text-white p-5 sm:p-6 rounded-3xl shadow-soft">
+                <p class="font-serif text-2xl sm:text-3xl font-bold">2–3 Days</p>
+                <p class="text-xs sm:text-sm text-brand-mint mt-1">Peak Freshness Guarantee on all sealed boxes</p>
+              </div>
+            </div>
+
+            <div class="space-y-4 sm:space-y-6 pt-6 sm:pt-10">
+              <div class="bg-brand-sand border border-brand-sage/60 p-5 sm:p-6 rounded-3xl">
+                <div class="w-10 h-10 rounded-xl bg-brand-green text-white flex items-center justify-center mb-3">
+                  <i data-lucide="award" class="w-5 h-5"></i>
+                </div>
+                <p class="font-bold text-brand-forest text-sm sm:text-base">FSSAI Licensed Kitchen</p>
+                <p class="text-xs text-brand-forest/70 mt-1">Cert No: 22426072001259</p>
+              </div>
+              <div class="rounded-3xl overflow-hidden shadow-soft border-4 border-white aspect-[4/5]">
+                <img 
+                  src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=700&q=85" 
+                  onerror="this.src='https://placehold.co/500x600/E8F5E9/2E7D32?text=Organic+Sprouts'"
+                  alt="Nutrient Rich Sprouted Pulses and Grains" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Brand Story Content -->
+        <div class="lg:col-span-6 reveal">
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-green bg-brand-mint px-3.5 py-1.5 rounded-full mb-4">About JKV Healthy Food</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-brand-forest leading-tight mb-6">
+            Wholesome, Homemade Nutrition Crafted With Care in Chennai
+          </h2>
+          <p class="text-brand-forest/80 text-base leading-relaxed mb-5">
+            At <strong>JKV Healthy Food</strong>, we believe eating clean shouldn't be complicated or time-consuming. Born out of a passion for authentic, preservative-free wellness in <strong>Moulivakkam, Chennai</strong>, we prepare fresh sprouts, crisp fruit &amp; vegetable salad boxes, and traditional Sprouts Idli Batter every single day.
+          </p>
+          <p class="text-brand-forest/80 text-base leading-relaxed mb-8">
+            Every 200g sprout box and 4-compartment wellness meal box is soaked, sprouted, washed, and hygienically sealed in small batches—retaining maximum plant protein, live enzymes, and natural crunch for fitness enthusiasts, busy professionals, and families.
+          </p>
+
+          <!-- Key Stats Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white p-4 rounded-2xl border border-brand-sage/50 text-center shadow-xs">
+              <p class="font-serif text-2xl font-bold text-brand-green">100%</p>
+              <p class="text-xs font-semibold text-brand-forest/75 mt-1">Natural &amp; Pure</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-brand-sage/50 text-center shadow-xs">
+              <p class="font-serif text-2xl font-bold text-brand-green">Zero</p>
+              <p class="text-xs font-semibold text-brand-forest/75 mt-1">Preservatives</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-brand-sage/50 text-center shadow-xs">
+              <p class="font-serif text-2xl font-bold text-brand-green">Daily</p>
+              <p class="text-xs font-semibold text-brand-forest/75 mt-1">Fresh Prep</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-brand-sage/50 text-center shadow-xs">
+              <p class="font-serif text-2xl font-bold text-brand-green">4.9★</p>
+              <p class="text-xs font-semibold text-brand-forest/75 mt-1">Customer Love</p>
+            </div>
+          </div>
+
+          <a href="#products" class="inline-flex items-center gap-2 bg-brand-forest hover:bg-brand-green text-white font-semibold px-7 py-3.5 rounded-full transition-colors shadow-sm">
+            <span>Browse Our Fresh Menu</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. OUR PRODUCTS SECTION ==================== -->
+ <section id="products" class="pattern-grid py-20 lg:py-28 bg-white rounded-[2.5rem] sm:rounded-[3.5rem] shadow-soft border-y border-brand-sage/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-green bg-brand-mint px-3.5 py-1.5 rounded-full mb-3">Fresh Daily Menu</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-brand-forest leading-tight mb-4">
+          Our Healthy Food Collection
+        </h2>
+        <p class="text-brand-forest/75 text-base">
+          Freshly packed in hygienic food-grade containers. Add multiple boxes to your basket or order any item directly via WhatsApp in one tap.
+        </p>
+      </div>
+
+      <!-- Interactive Category Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-12 reveal" id="category-filters">
+        <button data-filter="all" class="filter-btn active px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-green text-white shadow-sm transition-all">
+          All Products
+        </button>
+        <button data-filter="sprouts" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-cream text-brand-forest hover:bg-brand-mint border border-brand-sage/60 transition-all">
+          Fresh Sprouts (200g)
+        </button>
+        <button data-filter="salads" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-cream text-brand-forest hover:bg-brand-mint border border-brand-sage/60 transition-all">
+          4-Compartment Salad Boxes
+        </button>
+        <button data-filter="batters" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-cream text-brand-forest hover:bg-brand-mint border border-brand-sage/60 transition-all">
+          Sprouts Idli Batter
+        </button>
+        <button data-filter="vegetables" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold bg-brand-cream text-brand-forest hover:bg-brand-mint border border-brand-sage/60 transition-all">
+          Ready to Cook Vegetables
+        </button>
+      </div>
+
+      <!-- Dynamic Responsive Product Grid -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7">
+        <!-- Products rendered cleanly via JavaScript -->
+      </div>
+
+      <div class="mt-10 text-center">
+        <button id="load-more-products" type="button" class="hidden inline-flex items-center justify-center bg-brand-green hover:bg-brand-dark text-white text-sm font-semibold px-7 py-3 rounded-full shadow-sm transition-colors">
+          See More
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4. WHY CHOOSE US SECTION ==================== -->
+  <section id="why-us" class="pattern-crosshatch py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-green bg-brand-mint px-3.5 py-1.5 rounded-full mb-3">Why JKV Healthy Food</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-brand-forest leading-tight mb-4">
+          Pure Goodness in Every Single Box
+        </h2>
+        <p class="text-brand-forest/75 text-base">
+          Inspired by traditional wisdom and modern nutrition science, we ensure uncompromised hygiene and freshness from our kitchen to your table.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7">
+        <!-- Card 1 -->
+        <div class="bg-white hover:bg-brand-mint/40 border border-brand-sage/50 rounded-3xl p-7 shadow-soft hover:shadow-card transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-2xl bg-brand-mint text-brand-green group-hover:bg-brand-green group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+            <i data-lucide="sprout" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-forest mb-2.5">Fresh Ingredients</h3>
+          <p class="text-sm text-brand-forest/75 leading-relaxed">
+            Handpicked whole pulses, crisp farm vegetables, and seasonal fruits sourced fresh every morning for peak crunch and nutrition.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white hover:bg-brand-mint/40 border border-brand-sage/50 rounded-3xl p-7 shadow-soft hover:shadow-card transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-2xl bg-brand-mint text-brand-green group-hover:bg-brand-green group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+            <i data-lucide="shield-check" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-forest mb-2.5">Natural Products</h3>
+          <p class="text-sm text-brand-forest/75 leading-relaxed">
+            100% natural, chemical-free, and zero artificial preservatives, colors, or refined sugar—just honest food as nature intended.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white hover:bg-brand-mint/40 border border-brand-sage/50 rounded-3xl p-7 shadow-soft hover:shadow-card transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-2xl bg-brand-mint text-brand-green group-hover:bg-brand-green group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+            <i data-lucide="home" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-forest mb-2.5">Homemade Food</h3>
+          <p class="text-sm text-brand-forest/75 leading-relaxed">
+            Prepared in small, hygienic batches in our FSSAI-certified Moulivakkam kitchen with filtered RO water and traditional care.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white hover:bg-brand-mint/40 border border-brand-sage/50 rounded-3xl p-7 shadow-soft hover:shadow-card transition-all duration-300 group reveal">
+          <div class="w-14 h-14 rounded-2xl bg-brand-mint text-brand-green group-hover:bg-brand-green group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+            <i data-lucide="heart-handshake" class="w-7 h-7"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-brand-forest mb-2.5">Healthy Lifestyle</h3>
+          <p class="text-sm text-brand-forest/75 leading-relaxed">
+            Balanced plant protein, dietary fiber, and micronutrients tailored for gym-goers, IT professionals, kids, and seniors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. SPECIAL OFFERS & COMBO DEALS ==================== -->
+  
+<section id="offers" class="pattern-background border-y border-brand-sage/60 bg-brand-mint/40 py-14 lg:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <span class="mb-2 inline-flex items-center rounded-full bg-brand-gold px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-white shadow-sm">
+            Exclusive Deals
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-forest">
+            Offers &amp; Plans
+          </h2>
+        </div>
+        <p class="max-w-md text-brand-forest/70 text-sm sm:text-base">
+          Fresh salad subscriptions and value pricing on ragi sprouts.
+        </p>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 lg:gap-5">
+        <article class="flex flex-col rounded-lg border border-brand-sage/70 bg-white p-5 shadow-soft transition-shadow hover:shadow-card sm:p-6">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Monthly Subscription</span>
+          <h3 class="mt-2 font-serif text-xl font-bold text-brand-forest">4-Compartment Salad Box</h3>
+          <p class="mt-1 text-sm text-brand-forest/65">6 days delivery</p>
+          <div class="mt-5 flex items-baseline gap-2">
+            <span class="text-2xl font-bold text-brand-green">₹3,069</span>
+            <span class="text-xs text-brand-forest/50 line-through">₹3,410</span>
+          </div>
+          <p class="mt-1 text-xs font-semibold text-brand-green">Save ₹341</p>
+          <a href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20I%20am%20interested%20in%20the%204-Compartment%20Salad%20Box%20monthly%20subscription." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-green px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
+            <img src="assets/images/whatsapp.png" alt="" class="h-4 w-4 object-contain" />
+            Order Monthly Plan
+          </a>
+        </article>
+
+        <article class="flex flex-col rounded-lg border border-brand-sage/70 bg-white p-5 shadow-soft transition-shadow hover:shadow-card sm:p-6">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Demo Plan</span>
+          <h3 class="mt-2 font-serif text-xl font-bold text-brand-forest">4-Compartment Salad Box</h3>
+          <p class="mt-1 text-sm text-brand-forest/65">5 days delivery</p>
+          <div class="mt-5 flex items-baseline gap-2">
+            <span class="text-2xl font-bold text-brand-green">₹599</span>
+          </div>
+          <p class="mt-1 text-xs text-brand-forest/60">Try the salad box delivery plan</p>
+          <a href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20I%20am%20interested%20in%20the%204-Compartment%20Salad%20Box%20demo%20plan." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-green px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
+            <img src="assets/images/whatsapp.png" alt="" class="h-4 w-4 object-contain" />
+            Order Demo Plan
+          </a>
+        </article>
+
+        <article class="flex flex-col rounded-lg border border-brand-sage/70 bg-white p-5 shadow-soft transition-shadow hover:shadow-card sm:p-6">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Single Pack</span>
+          <h3 class="mt-2 font-serif text-xl font-bold text-brand-forest">Ragi Sprouts</h3>
+          <p class="mt-1 text-sm text-brand-forest/65">1 box</p>
+          <div class="mt-5 flex items-baseline gap-2">
+            <span class="text-2xl font-bold text-brand-green">₹35</span>
+          </div>
+          <p class="mt-1 text-xs text-brand-forest/60">Freshly packed sprouts</p>
+          <a href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20I%20am%20interested%20in%20ordering%201%20box%20of%20Ragi%20Sprouts." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-green px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
+            <img src="assets/images/whatsapp.png" alt="" class="h-4 w-4 object-contain" />
+            Order 1 Box
+          </a>
+        </article>
+
+        <article class="flex flex-col rounded-lg border border-brand-green/50 bg-white p-5 shadow-card transition-shadow hover:shadow-float sm:p-6">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Best Value</span>
+          <h3 class="mt-2 font-serif text-xl font-bold text-brand-forest">Ragi Sprouts Combo</h3>
+          <p class="mt-1 text-sm text-brand-forest/65">2 boxes</p>
+          <div class="mt-5 flex items-baseline gap-2">
+            <span class="text-2xl font-bold text-brand-green">₹55</span>
+            <span class="text-xs text-brand-forest/50 line-through">₹70</span>
+          </div>
+          <p class="mt-1 text-xs font-semibold text-brand-green">You save ₹15</p>
+          <a href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20I%20am%20interested%20in%20the%20Ragi%20Sprouts%202-box%20combo%20offer." target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-green px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark">
+            <img src="assets/images/whatsapp.png" alt="" class="h-4 w-4 object-contain" />
+            Order Combo
+          </a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ==================== 5B. COMING SOON: MICROGREENS & MUSHROOMS ==================== -->
+  <section id="coming-soon" class="pattern-wave py-16 lg:py-24 bg-white border-y border-brand-sage/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-brand-dark bg-brand-mint border border-brand-sage px-4 py-1.5 rounded-full mb-3">
+          <span class="w-2 h-2 rounded-full bg-brand-green animate-ping"></span>
+          <span>Launching Soon at JKV Healthy Food</span>
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-forest mb-3">
+          Coming Soon: Live Microgreens &amp; Fresh Mushrooms
+        </h2>
+        <p class="text-brand-forest/75 text-base">
+          We are expanding our Chennai urban farm harvest! Pre-register on WhatsApp to get early-bird launch discounts and first-harvest alerts.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Coming Soon 1: Organic Microgreens -->
+        <div class="bg-brand-cream rounded-[2rem] border border-brand-sage/60 overflow-hidden shadow-soft flex flex-col sm:flex-row reveal group">
+          <div class="sm:w-2/5 relative min-h-[220px] bg-brand-mint overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=700&q=80"
+              onerror="this.src='https://placehold.co/500x500/E8F5E9/2E7D32?text=Live+Microgreens'"
+              alt="Fresh Organic Microgreens by JKV Healthy Food"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-brand-forest text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+              Coming Soon
+            </span>
+          </div>
+          <div class="sm:w-3/5 p-6 sm:p-7 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-brand-green uppercase tracking-wider">40x Concentrated Nutrients</span>
+              <h3 class="font-serif text-2xl font-bold text-brand-forest mt-1 mb-2.5">Organic Live Microgreens</h3>
+              <p class="text-sm text-brand-forest/75 leading-relaxed mb-4">
+                Pesticide-free Radish, Sunflower, Broccoli, and Mustard microgreens harvested fresh to top your salads, smoothies, and sandwiches.
+              </p>
+            </div>
+            <div class="pt-2">
+              <a
+                href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20Please%20notify%20me%20on%20WhatsApp%20as%20soon%20as%20Organic%20Microgreens%20launch!"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-dark text-white text-xs font-semibold px-5 py-3 rounded-full shadow-xs transition-all"
+              >
+                <i data-lucide="bell-ring" class="w-4 h-4"></i>
+                <span>Notify Me on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coming Soon 2: Farm-Fresh Mushrooms -->
+        <div class="bg-brand-cream rounded-[2rem] border border-brand-sage/60 overflow-hidden shadow-soft flex flex-col sm:flex-row reveal group">
+          <div class="sm:w-2/5 relative min-h-[220px] bg-brand-mint overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80"
+              onerror="this.src='https://placehold.co/500x500/F3EFE6/1B5E20?text=Farm+Fresh+Mushrooms'"
+              alt="Farm Fresh Oyster and Milky Mushrooms by JKV Healthy Food"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <span class="absolute top-3 left-3 bg-brand-forest text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+              Coming Soon
+            </span>
+          </div>
+          <div class="sm:w-3/5 p-6 sm:p-7 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-brand-green uppercase tracking-wider">Vitamin D &amp; Plant Protein</span>
+              <h3 class="font-serif text-2xl font-bold text-brand-forest mt-1 mb-2.5">Farm-Fresh Oyster &amp; Milky Mushrooms</h3>
+              <p class="text-sm text-brand-forest/75 leading-relaxed mb-4">
+                100% chemical-free, organically grown Oyster and Milky mushrooms harvested on order for tender texture, immunity support, and guilt-free cooking.
+              </p>
+            </div>
+            <div class="pt-2">
+              <a
+                href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20Please%20notify%20me%20on%20WhatsApp%20as%20soon%20as%20Farm-Fresh%20Mushrooms%20launch!"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-dark text-white text-xs font-semibold px-5 py-3 rounded-full shadow-xs transition-all"
+              >
+                <i data-lucide="bell-ring" class="w-4 h-4"></i>
+                <span>Notify Me on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. CUSTOMER REVIEWS SECTION ==================== -->
+  <section class="pattern-halftone py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-green bg-brand-mint px-3.5 py-1.5 rounded-full mb-3">Happy Chennai Customers</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-forest mb-3">
+          Loved by Our Happy Customers
+        </h2>
+        <p class="text-brand-forest/75 text-base">
+          Real feedback from customers across Moulivakkam, Porur, and Chennai.
+        </p>
+      </div>
+
+      <div id="review-carousel" class="max-w-3xl mx-auto" role="region" aria-label="Customer reviews">
+        <div id="review-track" class="review-track flex overflow-x-auto snap-x snap-mandatory" tabindex="0" aria-live="polite">
+          <div class="review-slide w-full shrink-0 snap-center px-1" role="group" aria-roledescription="slide" aria-label="1 of 5">
+            <article class="bg-white rounded-3xl p-7 sm:p-9 border border-brand-sage/50 shadow-soft">
+              <div class="flex items-center gap-1 text-brand-gold mb-4" aria-label="5 out of 5 stars">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-brand-forest/85 text-sm leading-relaxed mb-6">
+                "I ordered food from JKV. It was delivered on time, and the food quality was superb. The fruits were very fresh. Overall, it was a nice experience. Guys, please support JKV Healthy Food!"
+              </p>
+              <div class="flex items-center gap-3 pt-4 border-t border-brand-sage/40">
+                <div class="w-10 h-10 rounded-full bg-brand-mint text-brand-dark font-bold flex items-center justify-center text-sm">RK</div>
+                <div>
+                  <p class="font-bold text-sm text-brand-forest">Rekha Kanniyappan</p>
+                  <p class="text-xs text-brand-forest/65">Happy Customer</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="review-slide w-full shrink-0 snap-center px-1" role="group" aria-roledescription="slide" aria-label="2 of 5">
+            <article class="bg-white rounded-3xl p-7 sm:p-9 border border-brand-sage/50 shadow-soft">
+              <div class="flex items-center gap-1 text-brand-gold mb-4" aria-label="5 out of 5 stars">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-brand-forest/85 text-sm leading-relaxed mb-6">
+                "Tasty and fresh food with neat, hygienic, and secure packaging. 🥗📦❤️"
+              </p>
+              <div class="flex items-center gap-3 pt-4 border-t border-brand-sage/40">
+                <div class="w-10 h-10 rounded-full bg-brand-mint text-brand-dark font-bold flex items-center justify-center text-sm">VJ</div>
+                <div>
+                  <p class="font-bold text-sm text-brand-forest">Vasanth J</p>
+                  <p class="text-xs text-brand-forest/65">Happy Customer</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="review-slide w-full shrink-0 snap-center px-1" role="group" aria-roledescription="slide" aria-label="3 of 5">
+            <article class="bg-white rounded-3xl p-7 sm:p-9 border border-brand-sage/50 shadow-soft">
+              <div class="flex items-center gap-1 text-brand-gold mb-4" aria-label="5 out of 5 stars">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-brand-forest/85 text-sm leading-relaxed mb-6">
+                "Everything looks perfect! Excellent service and hygienic packaging."
+              </p>
+              <div class="flex items-center gap-3 pt-4 border-t border-brand-sage/40">
+                <div class="w-10 h-10 rounded-full bg-brand-mint text-brand-dark font-bold flex items-center justify-center text-sm">MM</div>
+                <div>
+                  <p class="font-bold text-sm text-brand-forest">Mohana Murugan</p>
+                  <p class="text-xs text-brand-forest/65">Happy Customer</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="review-slide w-full shrink-0 snap-center px-1" role="group" aria-roledescription="slide" aria-label="4 of 5">
+            <article class="bg-white rounded-3xl p-7 sm:p-9 border border-brand-sage/50 shadow-soft">
+              <div class="flex items-center gap-1 text-brand-gold mb-4" aria-label="5 out of 5 stars">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-brand-forest/85 text-sm leading-relaxed mb-6">
+                "I have a very busy schedule, so I can't prepare my meals after the gym. JKV Healthy Food came to the rescue and helped satisfy my hunger with healthy food. I recommend supporting startups like this rather than big brands."
+              </p>
+              <div class="flex items-center gap-3 pt-4 border-t border-brand-sage/40">
+                <div class="w-10 h-10 rounded-full bg-brand-mint text-brand-dark font-bold flex items-center justify-center text-sm">SK</div>
+                <div>
+                  <p class="font-bold text-sm text-brand-forest">Suresh Kumar J</p>
+                  <p class="text-xs text-brand-forest/65">Fitness Enthusiast</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="review-slide w-full shrink-0 snap-center px-1" role="group" aria-roledescription="slide" aria-label="5 of 5">
+            <article class="bg-white rounded-3xl p-7 sm:p-9 border border-brand-sage/50 shadow-soft">
+              <div class="flex items-center gap-1 text-brand-gold mb-4" aria-label="5 out of 5 stars">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+              <p class="text-brand-forest/85 text-sm leading-relaxed mb-6">
+                "Highly recommend these sprouts! They arrived incredibly fresh, crisp, and clean, with no soggy parts. I add a handful to my daily salads and sandwiches for a healthy crunch. The packaging keeps them fresh in the fridge for days. Excellent value for money. Will definitely buy again!"
+              </p>
+              <div class="flex items-center gap-3 pt-4 border-t border-brand-sage/40">
+                <div class="w-10 h-10 rounded-full bg-brand-mint text-brand-dark font-bold flex items-center justify-center text-sm">SS</div>
+                <div>
+                  <p class="font-bold text-sm text-brand-forest">Shyam Sundar Girinandan</p>
+                  <p class="text-xs text-brand-forest/65">Happy Customer</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center gap-5 mt-6">
+          <button id="review-previous" type="button" aria-label="Previous review" class="w-10 h-10 rounded-full bg-white border border-brand-sage/60 text-brand-forest hover:bg-brand-mint transition-colors">
+            <i data-lucide="arrow-left" class="w-4 h-4 mx-auto"></i>
+          </button>
+          <div id="review-pagination" class="flex items-center gap-2" aria-label="Choose a review"></div>
+          <button id="review-next" type="button" aria-label="Next review" class="w-10 h-10 rounded-full bg-white border border-brand-sage/60 text-brand-forest hover:bg-brand-mint transition-colors">
+            <i data-lucide="arrow-right" class="w-4 h-4 mx-auto"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. CONTACT US & QUICK ORDER SECTION ==================== -->
+  <section id="contact" class="pattern-vertical py-20 lg:py-28 bg-brand-sand/70 border-t border-brand-sage/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Contact Details -->
+        <div class="lg:col-span-5 reveal">
+          <span class="inline-block text-xs font-bold uppercase tracking-widest text-brand-green bg-white px-3.5 py-1.5 rounded-full mb-3 shadow-2xs">Get In Touch</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-forest mb-4">
+            Order Fresh Today or Reach Out to Us
+          </h2>
+          <p class="text-brand-forest/80 text-base leading-relaxed mb-8">
+            Have a custom diet requirement, corporate bulk order, or weekly subscription inquiry? Message us directly on WhatsApp or visit our kitchen in Chennai.
+          </p>
+
+          <div class="space-y-4">
+            <!-- Phone / WhatsApp Card -->
+            <a href="https://wa.me/919500009535" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 bg-white p-5 rounded-2xl border border-brand-sage/50 hover:border-brand-green transition-colors shadow-2xs">
+              <div class="w-11 h-11 rounded-xl bg-brand-mint text-brand-green flex items-center justify-center shrink-0">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-brand-forest/60">Phone &amp; WhatsApp Ordering</p>
+                <p class="font-bold text-brand-forest text-base mt-0.5">+91 95000 09535</p>
+                <p class="text-xs text-brand-green font-medium mt-0.5">Tap to chat instantly on WhatsApp</p>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="flex items-start gap-4 bg-white p-5 rounded-2xl border border-brand-sage/50 shadow-2xs">
+              <div class="w-11 h-11 rounded-xl bg-brand-mint text-brand-green flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-brand-forest/60">Kitchen Location</p>
+                <p class="font-bold text-brand-forest text-sm sm:text-base mt-0.5">1/133, Stalin Nagar, Moulivakkam, Chennai - 600125</p>
+              </div>
+            </div>
+
+            <!-- Instagram & Email Card -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <a href="https://instagram.com/jkv_healthy_food" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-white p-4 rounded-2xl border border-brand-sage/50 hover:border-brand-green transition-colors shadow-2xs">
+                <div class="w-10 h-10 rounded-xl bg-pink-600 flex items-center justify-center shrink-0">
+                  <img src="assets/images/instagram.png" alt="" class="w-5 h-5 object-contain" />
+                </div>
+                <div class="overflow-hidden">
+                  <p class="text-[11px] font-bold uppercase text-brand-forest/60">Instagram</p>
+                  <p class="font-bold text-[11px] sm:text-xs text-brand-forest whitespace-nowrap">@jkv_healthy_food</p>
+                </div>
+              </a>
+
+              <a href="mailto:jkvhealthyfood@gmail.com" class="flex items-center gap-2 bg-white p-3 sm:p-4 rounded-2xl border border-brand-sage/50 hover:border-brand-green transition-colors shadow-2xs">
+                <div class="w-9 h-9 rounded-xl bg-brand-mint text-brand-green flex items-center justify-center shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div class="min-w-0">
+                  <p class="text-[11px] font-bold uppercase text-brand-forest/60">Email Us</p>
+                  <p class="font-bold text-[11px] sm:text-xs text-brand-forest whitespace-nowrap">jkvhealthyfood@gmail.com</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Quick WhatsApp Order Form -->
+        <div class="lg:col-span-7 reveal">
+          <div class="bg-white rounded-[2rem] p-7 sm:p-10 shadow-card border border-brand-sage/60">
+            <h3 class="font-serif text-2xl font-bold text-brand-forest mb-2">Quick Custom Order Form</h3>
+            <p class="text-sm text-brand-forest/70 mb-6">Fill in your details below and we'll open WhatsApp with your formatted order ready to send.</p>
+
+            <form id="whatsapp-order-form" class="space-y-5">
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="cust-name" class="block text-xs font-bold uppercase tracking-wider text-brand-forest/80 mb-2">Your Name *</label>
+                  <input type="text" id="cust-name" required placeholder="e.g., Karthik S" class="w-full px-4 py-3 rounded-xl bg-brand-cream border border-brand-sage focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm" />
+                </div>
+                <div>
+                  <label for="cust-area" class="block text-xs font-bold uppercase tracking-wider text-brand-forest/80 mb-2">Delivery Area in Chennai *</label>
+                  <input type="text" id="cust-area" required placeholder="e.g., Moulivakkam / Porur / Valasaravakkam" class="w-full px-4 py-3 rounded-xl bg-brand-cream border border-brand-sage focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="cust-product" class="block text-xs font-bold uppercase tracking-wider text-brand-forest/80 mb-2">Preferred Product / Plan</label>
+                  <select id="cust-product" class="w-full px-4 py-3 rounded-xl bg-brand-cream border border-brand-sage focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm">
+                    <option value="Fresh Sprouts (200g Boxes)">Fresh Sprouts (200g Boxes)</option>
+                    <option value="4-Compartment Chickpea & Paneer Salad Box">4-Compartment Chickpea &amp; Paneer Salad Box</option>
+                    <option value="4-Compartment Peanut & Veggie Protein Box">4-Compartment Peanut &amp; Veggie Protein Box</option>
+                    <option value="4-Compartment Sweet Corn & Boiled Egg Box">4-Compartment Sweet Corn &amp; Boiled Egg Box</option>
+                    <option value="Sprouts Idli Batter (1 Kg Pack)">Sprouts Idli Batter (1 Kg Pack)</option>
+                    <option value="Fresh Cut Vegetables & Fruits Box">Fresh Cut Vegetables &amp; Fruits Box</option>
+                    <option value="Weekly Fitness Subscription (6+1 Free)">Weekly Fitness Subscription (6+1 Free)</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="cust-time" class="block text-xs font-bold uppercase tracking-wider text-brand-forest/80 mb-2">Delivery Slot</label>
+                  <select id="cust-time" class="w-full px-4 py-3 rounded-xl bg-brand-cream border border-brand-sage focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm">
+                    <option value="Morning (6:30 AM - 9:00 AM)">Morning (6:30 AM – 9:00 AM)</option>
+                    <option value="Evening (5:00 PM - 7:30 PM)">Evening (5:00 PM – 7:30 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="cust-notes" class="block text-xs font-bold uppercase tracking-wider text-brand-forest/80 mb-2">Special Instructions (Optional)</label>
+                <textarea id="cust-notes" rows="3" placeholder="e.g., 2 boxes Green Gram Sprouts + 1 Corn Salad Box without onion..." class="w-full px-4 py-3 rounded-xl bg-brand-cream border border-brand-sage focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm"></textarea>
+              </div>
+
+              <button type="submit" class="w-full inline-flex items-center justify-center gap-2.5 bg-brand-green hover:bg-brand-dark text-white font-semibold py-4 px-6 rounded-full shadow-float transition-all transform hover:-translate-y-0.5 cursor-pointer">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Send Order via WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. FOOTER SECTION ==================== -->
+  <footer class="bg-brand-forest text-white pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/15">
+        
+        <!-- Brand Column -->
+        <div class="lg:col-span-4">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center p-1 overflow-hidden">
+              <img
+                src="assets/images/JKV Healthy Food - Logo.jpg"
+                alt="JKV Healthy Food Logo"
+                class="w-full h-full object-contain"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+              />
+              <svg viewBox="0 0 100 100" class="w-full h-full hidden" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M58 14C34 11 14 29 14 53C14 76 33 93 56 91C77 89 92 71 89 48C86 64 73 75 56 75C47 75 40 70 38 63C47 59 58 49 63 36C55 44 45 49 36 49C31 49 28 45 29 39C32 25 44 16 58 14Z" fill="#2E7D32" />
+                <circle cx="43" cy="34" r="7.5" fill="#2E7D32" />
+                <path d="M44 78C56 78 69 69 73 54C65 63 54 68 43 68" fill="#43A047" />
+                <path d="M65 34C63 25 66 17 72 13C76 19 75 27 65 34Z" fill="#1B5E20" />
+                <path d="M62 34C54 31 49 25 50 19C56 20 61 26 62 34Z" fill="#2E7D32" />
+                <path d="M67 35C74 30 82 30 86 34C81 39 74 39 67 35Z" fill="#388E3C" />
+              </svg>
+            </div>
+            <div>
+              <span class="font-serif text-xl font-bold text-white block leading-none">JKV Healthy Food</span>
+              <span class="text-[11px] text-brand-sage tracking-wider uppercase block mt-1">Your Path to Better Living</span>
+            </div>
+          </div>
+          <p class="text-sm text-white/75 leading-relaxed mb-5">
+            Freshly sprouted pulses, 4-compartment fruit &amp; veggie salad boxes, and stone-ground Sprouts Idli Batter delivered fresh in Chennai.
+          </p>
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-3.5 py-2 rounded-xl text-xs text-brand-mint">
+              <i data-lucide="badge-check" class="w-4 h-4 text-brand-sage"></i>
+              <span>FSSAI Certified: <strong>22426072001259</strong></span>
+            </div>
+            <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-3.5 py-2 rounded-xl text-xs text-brand-mint">
+              <i data-lucide="badge-check" class="w-4 h-4 text-brand-sage"></i>
+              <span>Udyam Certified: <strong>UDYAM-TN-08-0145892</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="lg:col-span-2">
+          <h4 class="font-serif font-bold text-lg text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm text-white/75">
+            <li><a href="#home" class="hover:text-brand-sage transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-brand-sage transition-colors">About Us</a></li>
+            <li><a href="#products" class="hover:text-brand-sage transition-colors">Our Products</a></li>
+            <li><a href="#why-us" class="hover:text-brand-sage transition-colors">Why Choose Us</a></li>
+            <li><a href="#offers" class="hover:text-brand-sage transition-colors">Special Offers</a></li>
+            <li><a href="#contact" class="hover:text-brand-sage transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Items -->
+        <div class="lg:col-span-3">
+          <h4 class="font-serif font-bold text-lg text-white mb-4">Popular Products</h4>
+          <ul class="space-y-2.5 text-sm text-white/75">
+            <li><a href="#products" class="hover:text-brand-sage transition-colors">Green Gram &amp; Chana Sprouts (200g)</a></li>
+            <li><a href="#products" class="hover:text-brand-sage transition-colors">4-Compartment Salad Boxes</a></li>
+            <li><a href="#products" class="hover:text-brand-sage transition-colors">Sprouts Idli Batter (1 Kg)</a></li>
+            <li><a href="#products" class="hover:text-brand-sage transition-colors">Ready to Cook Vegetables</a></li>
+            <li><a href="#coming-soon" class="hover:text-brand-sage transition-colors">Microgreens &amp; Mushrooms (Soon)</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Socials -->
+        <div class="lg:col-span-3">
+          <h4 class="font-serif font-bold text-lg text-white mb-4">Contact &amp; Social</h4>
+          <ul class="space-y-3 text-sm text-white/75">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-sage shrink-0 mt-1"></i>
+              <span>1/133, Stalin Nagar, Moulivakkam, Chennai - 600125</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-sage shrink-0"></i>
+              <a href="tel:+919500009535" class="hover:text-white">+91 95000 09535</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-sage shrink-0"></i>
+              <a href="mailto:jkvhealthyfood@gmail.com" class="hover:text-white">jkvhealthyfood@gmail.com</a>
+            </li>
+          </ul>
+
+          <div class="flex items-center gap-3 mt-5">
+            <a href="https://wa.me/919500009535" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-green flex items-center justify-center transition-colors">
+              <img src="assets/images/whatsapp.png" alt="" class="w-5 h-5 object-contain" />
+            </a>
+            <a href="https://instagram.com/jkv_healthy_food" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 hover:bg-pink-600 flex items-center justify-center transition-colors">
+              <img src="assets/images/instagram.png" alt="" class="w-5 h-5 object-contain" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
+        <p>© 2026 JKV Healthy Food. All rights reserved. Homemade with love in Chennai.</p>
+        <p>100% Natural • Fresh Daily • Hygienically Packed</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP QUICK BUTTON ==================== -->
+  <a href="https://wa.me/919500009535?text=Hello%20JKV%20Healthy%20Food!%20I%20would%20like%20to%20know%20today's%20fresh%20menu." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-5 right-5 z-30 flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold px-4 py-3.5 rounded-full shadow-float transition-transform hover:scale-105">
+    <img src="assets/images/whatsapp.png" alt="" class="w-6 h-6 object-contain" />
+    <span class="hidden sm:inline text-sm">Chat &amp; Order</span>
+  </a>
+
+  <button id="back-to-top" type="button" aria-label="Back to top" title="Back to top" class="back-to-top fixed bottom-24 right-5 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-brand-forest text-white shadow-lg transition-colors hover:bg-brand-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-green">
+    <i data-lucide="arrow-up" class="h-5 w-5"></i>
+  </button>
+
+  <!-- ==================== SLIDE-OVER MULTI-ITEM ORDER CART DRAWER ==================== -->
+  <div id="cart-backdrop" onclick="toggleCartDrawer()" class="fixed inset-0 bg-brand-forest/50 backdrop-blur-xs z-50 hidden transition-opacity"></div>
+  <aside id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-6 border-b border-brand-sage/50 flex items-center justify-between bg-brand-cream">
+      <div class="flex items-center gap-2.5">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-green"></i>
+        <h3 class="font-serif text-xl font-bold text-brand-forest">Your Fresh Order Basket</h3>
+      </div>
+      <button onclick="toggleCartDrawer()" aria-label="Close Cart" class="p-2 rounded-full hover:bg-brand-sage/40 text-brand-forest">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Cart Items List -->
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4">
+      <!-- Populated dynamically -->
+    </div>
+
+    <!-- Cart Footer Checkout -->
+    <div class="p-6 border-t border-brand-sage/50 bg-brand-cream">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-sm font-semibold text-brand-forest/75">Estimated Total</span>
+        <span id="cart-total" class="font-serif text-2xl font-bold text-brand-green">₹0</span>
+      </div>
+      <button onclick="checkoutCartViaWhatsApp()" id="checkout-btn" disabled class="w-full inline-flex items-center justify-center gap-2 bg-brand-green disabled:bg-gray-300 disabled:cursor-not-allowed hover:bg-brand-dark text-white font-semibold py-4 px-6 rounded-full shadow-md transition-all cursor-pointer">
+        <img src="assets/images/whatsapp.png" alt="" class="w-5 h-5 object-contain" />
+        <span>Send Combined Order on WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div id="toast" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-brand-forest text-white text-sm font-medium px-5 py-3 rounded-full shadow-xl opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2">
+    <i data-lucide="check-circle" class="w-4 h-4 text-brand-sage"></i>
+    <span id="toast-msg">Added to basket!</span>
+  </div>
+
+  <!-- ==================== PAGE SCRIPTS ==================== -->
+  <script src="assets/js/products/fresh-sprouts.js"></script>
+  <script src="assets/js/products/salad-boxes.js"></script>
+  <script src="assets/js/products/sprouts-idli-batter.js"></script>
+  <script src="assets/js/products/ready-to-cook-vegetables.js"></script>
+  <script src="assets/js/product-catalog.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
