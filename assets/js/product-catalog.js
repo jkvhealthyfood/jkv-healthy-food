@@ -19,7 +19,8 @@ function renderProducts(filter = activeProductFilter) {
   const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
 
   grid.innerHTML = filtered.slice(0, visibleProductCount).map(product => {
-    const waText = encodeURIComponent(`Hello JKV Healthy Food! I would like to order:\n• ${product.name} (${product.weight}) - ₹${product.price}`);
+    const productImageUrl = new URL(product.image, window.location.href).href;
+    const waText = encodeURIComponent(`Hello JKV Healthy Food! I would like to order:\n• ${product.name} (${product.weight}) - ₹${product.price}\n\nProduct Image:\n${productImageUrl}`);
     return `
       <article class="bg-brand-cream/70 hover:bg-white rounded-3xl border border-brand-sage/60 overflow-hidden shadow-soft hover:shadow-card transition-all duration-300 flex flex-col justify-between group">
         <div>

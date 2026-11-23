@@ -92,9 +92,12 @@ function toggleCartDrawer(forceOpen = null) {
 
 function checkoutCartViaWhatsApp() {
   if (cart.length === 0) return;
-  const lines = cart.map((item, i) => `${i + 1}. ${item.name} (${item.weight}) x ${item.qty} = ₹${item.price * item.qty}`);
+  const lines = cart.map((item, i) => {
+    const productImageUrl = new URL(item.image, window.location.href).href;
+    return `${i + 1}. ${item.name} (${item.weight}) x ${item.qty} = ₹${item.price * item.qty}\n   Product Image: ${productImageUrl}`;
+  });
   const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-  const message = `Hello JKV Healthy Food! I would like to place the following order:\n\n${lines.join('\n')}\n\n*Total Amount: ₹${total}*\nPlease confirm availability & delivery time.`;
+  const message = `Hello JKV Healthy Food! I would like to place the following order:\n\n${lines.join('\n\n')}\n\n*Total Amount: ₹${total}*\nPlease confirm availability & delivery time.`;
   window.open(`https://wa.me/919500009535?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
 }
 
@@ -108,6 +111,27 @@ document.getElementById('whatsapp-order-form').addEventListener('submit', functi
   const notes = document.getElementById('cust-notes').value.trim();
 
   let msg = `Hello JKV Healthy Food! New Order Inquiry:\n\n• *Name:* ${name}\n• *Area:* ${area}\n• *Selection:* ${product}\n• *Preferred Slot:* ${slot}`;
+  if (typeof products !== 'undefined') {
+    let matchedProduct;
+    if (/idli|batter/i.test(product)) {
+      matchedProduct = products.find(item => item.category === 'batters');
+    } else if (/sprouts/i.test(product)) {
+      matchedProduct = products.find(item => item.category === 'sprouts');
+    } else if (/peanut/i.test(product)) {
+      matchedProduct = products.find(item => /peanut/i.test(item.name));
+    } else if (/corn/i.test(product)) {
+      matchedProduct = products.find(item => /corn/i.test(item.name));
+    } else if (/chickpea/i.test(product)) {
+      matchedProduct = products.find(item => /chickpea/i.test(item.name));
+    } else if (/vegetable|fruit/i.test(product)) {
+      matchedProduct = products.find(item => /mixed vegetables/i.test(item.name));
+    }
+
+    if (matchedProduct && matchedProduct.image) {
+      const productImageUrl = new URL(matchedProduct.image, window.location.href).href;
+      msg += `\n\n*Product Image:*\n${productImageUrl}`;
+    }
+  }
   if (notes) msg += `\n• *Notes:* ${notes}`;
 
   window.open(`https://wa.me/919500009535?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
